@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Griffy');
+body{
+    margin: 0;
+    font-family: 'Griffy', cursive;
+}
+.wrapper{
+    background-image: url("/halloween-1702677_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.showcase{
+    margin-left: 15%;
+
+}
+.content{
+    width: 40%;
+}
+h1{
+    margin: 0;
+    color:white;
+    font-size: 10rem;
+    padding-top: 2rem;
+    -webkit-animation-name: colorchange;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: 20;
+    animation-iteration-count: 20;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+#spookytext{
+    font-size: 3rem;
+    color: rgb(243, 150, 43);
+}
+
+.spookybtn{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 1.6rem;
+    font-family: 'Griffy', cursive; 
+    box-shadow: 0px 5px 25px rgb(235, 85, 85);
+    animation-name: glower;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 20;
+    -webkit-animation-name: glower;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: 20;
+    
+}
+.spookybtn:hover{
+    animation-duration: 0s;
+    
+}
+@keyframes colorchange{
+    from{color: white;}
+    to{color: rgb(112, 112, 112);}
+}
+@-webkit-keyframes colorchange{
+    from{color: white;}
+    to{color: rgb(112, 112, 112);}
+}
+
+@keyframes glower{
+    from{
+        box-shadow:0px 5px 25px rgb(201, 109, 109); 
+        background-color: rgb(233, 142, 68);
+    }
+    to{
+        box-shadow: 0px 5px 5px rgb(228, 209, 104);
+        background-color: rgb(230, 187, 132);
+    }
+}
+@-webkit-keyframes glower{
+    from{
+        box-shadow:0px 5px 25px rgb(235, 85, 85); 
+    }
+    to{
+        box-shadow: 0px 5px 5px rgb(250, 0, 0);
+    }
+}
+
+@media (max-width:700px){
+    .content{
+        width: 100%;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .wrapper{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .showcase{
+        margin: 0;
+        padding: 0.3rem;
+    }
+}
