@@ -4,7 +4,7 @@ body{
     font-family: 'Griffy', cursive;
 }
 .wrapper{
-    background-image: url("/halloween-1702677_1920.jpg");
+    background-image: url("halloween-1702677_1920.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
